@@ -7,15 +7,14 @@ function Checkout() {
   const [isPaymentPage, setIsPaymentPage] = useState(false);
 
   const handleProceedToPayment = () => {
-    setIsPaymentPage(true); // Switch to payment form view
+    setIsPaymentPage(true); 
   };
 
   const handlePaymentSubmit = (event) => {
     event.preventDefault();
-    // Handle payment submission here (e.g., integrate with a payment gateway)
+    
     alert('Payment successful! Thank you for your order.');
-    // Reset the cart after payment
-    // clearCart();
+    
   };
 
   if (isPaymentPage) {
